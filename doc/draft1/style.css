@@ -1,0 +1,258 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --greenT: #48b915;
+    --greenLight: #8dd26a;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+}
+a:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+body {
+    background-color: whitesmoke;
+    font-family: "metrophobic";
+    font-size: 20px;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+/* NAV */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a {
+    margin: 0 1rem;
+}
+
+#big-flex {
+    flex-grow: 1;
+}
+
+#contact-link {
+    background-color: var(--greenT);
+    padding: 1rem 3rem;
+}
+#contact-link:hover{
+    background-color: var(--greenLight);
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+#logotext {
+    width: 15%;
+    margin: 1rem;
+    margin-right: 2rem;
+}
+
+/* HERO */
+.hero {
+    background: url(./img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 0.1rem;
+    margin-bottom: 3rem;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 10rem;
+    color: whitesmoke;
+}
+
+.mini-presentation, .catch {
+    width: 25%;
+}
+
+#cta-contact {
+    margin: 6rem;
+    text-align: center;
+}
+
+#cta-contact a {
+    padding: 2rem;
+    background-color: var(--greenT);
+}
+#cta-contact a:hover {
+    padding: 2.2rem;
+    font-size: 1.6rem;
+    background-color: var(--greenLight);
+    transition: 0.5s;
+}
+
+/* ABOUT */
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0rem 10rem;
+    gap: 5rem;
+    margin-bottom: 5rem;
+}
+
+.about h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+/* SERVICE */
+.service {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    max-width: 100%;
+    padding: 1rem;
+}
+
+
+.service-card {
+    background-color: var(--greenLight);
+    padding: 2rem;
+    text-align: justify;
+}
+
+.service-card h3 {
+    text-align: center;
+    margin: 2rem;
+}
+
+.service-card p:nth-child(even) {
+    margin-bottom: 1rem;
+    text-indent: 1rem;
+}
+
+.service-card ul {
+    padding-left: 3rem;
+    margin-bottom: 2rem;
+}
+
+.service-card img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+.service-img {
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* PORTFOLIO */
+.portfolio {
+    max-width: 100%;
+    padding: 1rem;
+    margin-bottom: 5rem;
+}
+
+.portfolio h2 {
+    text-align: center;
+    margin: 10rem auto 5rem;
+}
+.pf-header {
+    text-align: center;
+    margin: 5rem auto 2rem;
+}
+
+.pf-section{
+    max-width: 100vw;
+    padding: 3rem;
+}
+
+.pf-section h3 {
+    margin: 2rem 0 2rem;
+}
+
+.article-list, .beer-list, .product-list {
+    display: grid;
+    gap: 1rem;
+}
+
+.article-list {
+    grid-template-columns: 1fr 15% 1fr;
+}
+
+.beer-list {
+    grid-template-columns: 20% 1fr 20%;
+}
+
+.article-list a img, .beer-list a img {
+    width: 100%;
+}
+
+.product-list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.product-list img {
+    width: 100%;
+}
+
+/* CONTACT */
+.contact h2 {
+    text-align: center;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 3rem;
+}
+
+.infos {
+    margin: 5rem 8rem;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    gap: 1rem;
+}
+
+form input, form textarea {
+    border: none;
+    background-color: white;
+    padding: 0.5rem;
+    font-family: "roboto";
+}
+
+form input[type="submit"]:hover{
+    background-color: var(--greenLight);
+    transition: 0.5s;
+}
+
+#mail{
+    grid-row: 2/3;
+    grid-column: 1/3;
+}
+
+#message {
+    grid-column: 1/3;
+    grid-row: 3/7;
+}
+
+#submit {
+    grid-column: 1/3;
+}
